@@ -14,7 +14,7 @@ stage('Initialize'){
 }
 stage ('Build') {
  sh 'mvn clean package'
-
+}
   }
  }
 }
