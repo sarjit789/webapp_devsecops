@@ -24,7 +24,7 @@ stage ('Check-Git-Secrets')  {
    stage ('Source-Composition-Analysis') {
        steps {
           sh 'rm owasp* || true'
-          sh 'wget 'https://raw.githubusercontent.com/sarjit789/webapp_devsecops/refs/heads/main/owasp-dependency2-check.sh'
+          sh 'wget "https://raw.githubusercontent.com/sarjit789/webapp_devsecops/refs/heads/main/owasp-dependency2-check.sh" '
           sh 'chmod +x owasp-dependency2-check.sh'
           sh 'bash owasp-dependency2-check.sh'
           
