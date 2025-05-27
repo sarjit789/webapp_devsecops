@@ -12,13 +12,14 @@ stages {
         '''
  }
 }
-stage('Check-Git'Secrets') {
-      setps {
+   
+stage ('Check-Git'Secrets')  {
+      steps {
          sh 'rm trufflehog || true'
-         sh 'docker run trufflesecurity/trufflehog git --json https://github.com/sarjit789/webapp_devsecops.git > trufflehog'
+         sh 'docker run trufflesecurity/trufflehog  --json https://github.com/sarjit789/webapp_devsecops.git > trufflehog'
          sh 'cat trufflehog'
-      }
-      }
+       }
+   }
       
 stage ('Build') {
  steps {
