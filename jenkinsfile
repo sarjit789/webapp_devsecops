@@ -3,7 +3,7 @@ pipeline {
      maven 'Maven'
 }
   agent any  
-  satges {
+  stages {
 stage('Initialize'){
    steps {
      sh '''
