@@ -12,7 +12,7 @@ stages {
         '''
  }
 }
-   
+
 stage ('Check-Git-Secrets')  {
       steps {
          sh 'rm trufflehog || true'
@@ -26,7 +26,8 @@ stages ('Source Composition Analysis') {
     sh  'wget "https://raw.githubusercontent.com/sarjit789/webapp_devsecops/refs/heads/main/owasp-dependency-check.sh" '
     sh 'chmod +x owasp-dependency-check.sh'
     sh 'bash owasp-dependency-check.sh'
-          
+   }
+}
 stage ('Build') {
  steps {
  sh 'mvn clean package'
