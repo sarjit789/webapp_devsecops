@@ -20,7 +20,7 @@ stage ('Check-Git-Secrets')  {
          sh 'cat trufflehog'
        }
    }
-stages ('Source Composition Analysis') {
+stage ('Source Composition Analysis') {
    steps {
     sh 'rm  owasp* || true'
     sh  'wget "https://raw.githubusercontent.com/sarjit789/webapp_devsecops/refs/heads/main/owasp-dependency-check.sh" '
