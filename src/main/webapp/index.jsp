@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Yadav-ji</title>
+    <title>yadav_devsecops</title>
 
 
     <!-- Custom styles for this template -->
